@@ -1,0 +1,37 @@
+.our-team {
+  background-color: var(--our-team-backgr-color);
+}
+.our-team__title {
+  @include font(700, 36px, 1.17, 0.03em);
+  text-align: center;
+  color: var(--basic-title-color);
+  margin-bottom: 50px;
+}
+.our-team__list {
+  display: flex;
+}
+.our-team__item {
+  flex-basis: calc((100% - 90px) / 4);
+  box-shadow: 0 2px 1px 0 rgba(00, 00, 00, 0.2),
+    0 1px 1px 0 rgba(00, 00, 00, 0.14);
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.our-team__name {
+  @include font(500, 16px, 1.19, 0.03em);
+  text-align: center;
+  color: var(--basic-title-color);
+  margin-bottom: 10px;
+}
+.our-team__proffetions {
+  margin-bottom: 16px;
+  @include font(null, 16px, 1.19, 0.03em);
+  text-align: center;
+  color: var(--basic-text-color);
+}
+.our-team__card-text {
+  background-color: var(--our-team-cards-backgr-color);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}

@@ -1,0 +1,75 @@
+footer {
+  background: var(--footer-backgr-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-conteiner {
+  display: flex;
+  align-items: baseline;
+  text-align: start;
+}
+.footer-nav {
+  margin-right: 70px;
+}
+
+.address {
+  margin-top: 20px;
+  font-style: normal;
+  &__contact-link {
+    display: inline-block;
+    margin-top: 9px;
+    font-style: inherit;
+    @include font(null, 14px, 1.71, 00.03em);
+    color: var(--footer-contact-color);
+  }
+  &__link {
+    font-family: inherit;
+    font-style: normal;
+    @include font(null, 14px, 1.71, 00.03em);
+    color: var(--footer-address-color);
+  }
+}
+
+.footer-title {
+  margin-bottom: 20px;
+  @include font(700, 14px, 1.14, 00.03em);
+  text-transform: uppercase;
+  color: var(--footer-address-color);
+}
+
+.footer-form {
+  display: flex;
+  width: 570px;
+  height: 86px;
+}
+.footer-form__field {
+  margin-right: 12px;
+}
+.footer-form__title {
+  display: block;
+}
+
+.footer-form__input {
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: var(--secondary-text-color);
+  background-color: inherit;
+  &::placeholder {
+    font-family: Roboto;
+    font-style: normal;
+    @include font(400, 16px, 1.25, 00.03em);
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.footer-btn {
+  margin-top: 36px;
+  &__title {
+    margin-right: 10px;
+  }
+}

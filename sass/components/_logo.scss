@@ -1,0 +1,15 @@
+.logo {
+  margin-right: 93px;
+  display: block;
+
+  font-family: "Raleway";
+  @include font(700, 26px, 1.19, 0.03em);
+  // vertical-align: Top;
+  color: var(--accent-color);
+  &--dark {
+    color: var(--header-logo-color);
+  }
+  &--light {
+    color: var(--footer-logo-accent-color);
+  }
+}
