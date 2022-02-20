@@ -1,13 +1,26 @@
 header {
   background-color: var(--header-backgr-color);
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
+
+  @media screen and (min-widht: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+
+  @media screen and (min-widht: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 .header-conteiner {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .header-nav {
