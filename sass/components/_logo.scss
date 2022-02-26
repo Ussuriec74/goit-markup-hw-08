@@ -3,23 +3,16 @@
 
   font-family: "Raleway";
   @include font(700, 24px, 1.17, 0.03em);
-  // vertical-align: Top;
   color: var(--accent-color);
+
+  @include desk {
+    @include font(700, 26px, 1.19, 0.03em);
+  }
 
   &--dark {
     color: var(--header-logo-color);
-    @media screen and (min-widht: 480px) {
-      margin-right: 88px;
-    }
   }
   &--light {
     color: var(--footer-logo-accent-color);
-  }
-}
-
-@media screen and (min-widht: 768px) {
-  .logo {
-    margin-right: 93px;
-    @include font(700, 26px, 1.19, 0.03em);
   }
 }

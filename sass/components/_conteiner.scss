@@ -1,7 +1,19 @@
 .conteiner {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
   text-align: center;
+
+  @include mobile {
+    width: 480px;
+  }
+
+  @include tabl {
+    width: 768px;
+  }
+
+  @include desk {
+    width: 1200px;
+  }
 }

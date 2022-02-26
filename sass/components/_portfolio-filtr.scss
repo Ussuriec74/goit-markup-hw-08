@@ -3,12 +3,23 @@
 }
 .portfolio-filtr {
   display: flex;
-  justify-content: center;
+
   margin-right: -8px;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+  }
+  @include tabl {
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  @include desk {
+    margin-bottom: 35px;
+  }
 }
 .portfolio-filtr__btn {
   margin-right: 8px;
+  margin-bottom: 15px;
   padding: 6px 22px;
   border-radius: 4px;
   border: none;

@@ -17,7 +17,7 @@
 </head>
 
 <body>
-  <header>
+   <header>
     <div class="conteiner header-conteiner">
       <nav class="header-nav">
         <a class="logo" href="">Web<span class="logo--dark">Studio</span></a>
@@ -46,16 +46,15 @@
           </ul>
         </div>  
     </div>
-    <div class="mobile-header">
+    <div class="conteiner mobile-header">
       <a class="logo" href="">Web<span class="logo--dark">Studio</span></a>
-      <button type="button" class="mobile-header__btn">
-        <svg class="mobile-header__icon" width= "40" heigth= "40">
-          <use href="./images/icons.svg#icon-menu_40px"></use>
-          <use href="./images/icons.svg#icon-close_40px"></use>
+      <button type="button" class="mobile-header__btn is-open" aria-expanded="false" data-menu-btn>
+        <svg class="mobile-header__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+          <use class="mobile-header__icon-menu" href="./images/icons.svg#icon-menu_40px"></use>
+          <use class="mobile-header__icon-close" href="./images/icons.svg#icon-close_40px"></use>
         </svg>
       </button>
-    </div>
-    <div class="mobile-nav">
+      <div class="mobile-nav">
         <ul class="mobile-nav__list">
           <li><a class="mobile-nav__link mobile-nav__link--current" href="">Студия</a></li>
           <li><a class="mobile-nav__link" href="./portfolio.html">Портфолио</a></li>
@@ -71,7 +70,7 @@
               <a class="mobile-header-contact__link--mail" href="mailto:info@devstudio.com">
                 info@devstudio.com</a>
             </li>
-            
+      
           </ul>
         </div>
         <div class="mobile-header-socials">
@@ -82,24 +81,24 @@
             <li class="mobile-header-socials__item">Linkedin</li>
           </ul>
         </div>
+      </div>
     </div>
-    
   </header>
   
   <main>
-    <section class="hero">
+    <!-- <section class="hero">
       <div class="conteiner hero-conteiner">
-        <h1 class="hero-conteiner__titele">Эффективные решения<br /> для вашего бизнеса</h1>
+        <h1 class="hero-conteiner__titele">Эффективные решения<br/> для вашего бизнеса</h1>
         <button type="button" class="hero-conteiner__btn btn" data-modal-open>Заказать услугу</button>
       </div>
-    </section>
-    <section class="section features">
+    </section> -->
+    <!-- <section class="section features">
       <h2 class="title features__title">Наши главные особенности</h2>
       <div class="conteiner features-conteiner">  
         <ul class="features__list">
           <li class="features__item">
             <div class="features-wrap">
-              <svg class="features-wrap__icon">
+              <svg class="features-wrap__icon" width="70" height="70">
                 <use href="./images/icons.svg#icon-antenna"></use>
               </svg>
             </div>
@@ -109,7 +108,7 @@
           </li>
           <li class="features__item">
             <div class="features-wrap">
-              <svg class="features-wrap__icon">
+              <svg class="features-wrap__icon" width="70" height="70">
                 <use href="./images/icons.svg#icon-clock"></use>
               </svg>
             </div>
@@ -119,7 +118,7 @@
           </li>
           <li class="features__item">
             <div class="features-wrap">
-              <svg class="features-wrap__icon">
+              <svg class="features-wrap__icon" width="70" height="70">
                 <use href="./images/icons.svg#icon-diagram"></use>
               </svg>
             </div>
@@ -129,7 +128,7 @@
           </li>
           <li class="features__item">
             <div class="features-wrap">
-              <svg class="features-wrap__icon">
+              <svg class="features-wrap__icon" width="70" height="70">
                 <use href="./images/icons.svg#icon-astronaut"></use>
               </svg>
             </div>
@@ -138,39 +137,51 @@
           </li>
         </ul>
       </div>
-    </section>
-    <section class="section our-work">
+    </section> -->
+    <!-- <section class="section our-work">
       <div class="conteiner">
         <h2 class="our-work__title">Чем мы занимаемся</h2>
         <ul class="our-work__list">
           <li class="our-work__item">
             <div class="our-work__wrap">
-              <img src="./images/What-are-we-doing1.jpg" alt="пишет код" width="370" height="294">
+              <img 
+              srcset="./images/What-are-we-doing1.jpg 1x, ./images/What-are-we-doing1-2x.jpg 2x"
+              src="./images/What-are-we-doing1.jpg" alt="пишет код" width="370" height="294">
               <p class="our-work__text">десктопные приложения</p>
             </div>
           </li>
           <li class="our-work__item">
             <div class="our-work__wrap">
-              <img src="./images/What-are-we-doing2.jpg" alt="сидит за ноутбуком с телефоном в руке" width="370"
+              <img 
+              srcset="./images/What-are-we-doing2.jpg 1x, ./images/What-are-we-doing2-2x.jpg 2x"
+              src="./images/What-are-we-doing2.jpg" alt="сидит за ноутбуком с телефоном в руке" width="370"
                 height="294">
               <p class="our-work__text">мобильные приложения</p>
             </div>
           </li>
           <li class="our-work__item">
             <div class="our-work__wrap">
-              <img src="./images/What-are-we-doing3.jpg" alt="работает на планшете" width="370" height="294">
+              <img 
+              srcset="./images/What-are-we-doing3.jpg 1x, ./images/What-are-we-doing3-2x.jpg 2x"
+              src="./images/What-are-we-doing3.jpg" alt="работает на планшете" width="370" height="294">
               <p class="our-work__text">дизайнерские решения</p>
             </div>
           </li>
         </ul>
       </div>
-    </section>
-    <section class="section our-team">
+    </section> -->
+    <!-- <section class="section our-team">
       <div class="conteiner">
         <h2 class="our-team__title">Наша команда</h2>
         <ul class="our-team__list">
           <li class="our-team__item">
-            <img src="./images/our_team/igor.jpg" alt="фото игоря" width="270" height="260">
+            <picture>
+              <source srcset="./images/our_team/igor.jpg 1x, ./images/our_team/igor-2x.jpg 2x"
+                media="(min-width: 1200px)">
+              <source srcset="./images/our_team/igor-tab.jpg 1x, ./images/our_team/igor-tab-2x.jpg 2x" media="(min-width: 768px)">
+              <source srcset="./images/our_team/igor-mob.jpg 1x, ./images/our_team/igor-mob-2x.jpg 2x" media="(min-width: 320px)">
+              <img class="our-team__img" src="./images/our_team/igor.jpg" alt="фото игоря">
+            </picture>
             <div class="our-team__card-text">
               <h3 class="our-team__name">Игорь Демьяненко</h3>
               <p lang="en" class="our-team__proffetions">Product Designer</p>
@@ -207,7 +218,14 @@
             </div> 
           </li>
           <li class="our-team__item">
-            <img src="./images/our_team/olga.jpg" alt="фото ольги" width="270" height="260">
+            <picture>
+              <source srcset="./images/our_team/olga.jpg 1x, ./images/our_team/olga-2x.jpg 2x"
+                media="(min-width: 1200px">
+              <source srcset="./images/our_team/olga-tab.jpg 1x, ./images/our_team/olga-tab-2x.jpg 2x" media="(min-width: 768px">
+              <source srcset="./images/our_team/olga-mob.jpg 1x, ./images/our_team/olga-mob-2x.jpg 2x" media="(min-width: 320px">
+              <img class="our-team__img" src="./images/our_team/olga.jpg" alt="фото ольги">
+            </picture>
+            
             <div class="our-team__card-text">
               <h3 class="our-team__name">Ольга Репина</h3>
               <p lang="en" class="our-team__proffetions">Frontend Developer</p>
@@ -244,7 +262,14 @@
             </div>      
           </li>
           <li class="our-team__item">
-            <img src="./images/our_team/nikolay.jpg" alt="фото николая" width="270" height="260">
+            <picture>
+              <source srcset="./images/our_team/nikolay.jpg 1x, ./images/our_team/nikolay-2x.jpg 2x"
+                media="(min-width: 1200px">
+              <source srcset="./images/our_team/nikolay-tab.jpg 1x, ./images/our_team/nikolay-tab-2x.jpg 2x" media="(min-width: 768px">
+              <source srcset="./images/our_team/nikolay-mob.jpg 1x, ./images/our_team/nikolay-mob-2x.jpg 2x" media="(min-width: 320px">
+              <img class="our-team__img" src="./images/our_team/nikolay.jpg" alt="фото николая">
+            </picture>
+            
             <div class="our-team__card-text">
               <h3 class="our-team__name">Николай Тарасов</h3>
               <p lang="en" class="our-team__proffetions">Marketing</p>
@@ -281,7 +306,14 @@
             </div>           
           </li>
           <li class="our-team__item">
-            <img src="./images/our_team/mihail.jpg" alt="фото михаила" width="270" height="260">
+            <picture>
+              <source srcset="./images/our_team/mihail.jpg 1x, ./images/our_team/mihail-2x.jpg 2x"
+                media="(min-width: 1200px">
+              <source srcset="./images/our_team/mihail-tab.jpg 1x, ./images/our_team/mihail-tab-2x.jpg 2x" media="(min-width: 768px">
+              <source srcset="./images/our_team/mihail-mob.jpg 1x, ./images/our_team/mihail-mob-2x.jpg 2x" media="(min-width: 320px">
+              <img class="our-team__img" src="./images/our_team/mihail.jpg" alt="фото михаила">
+            </picture>
+            
             <div class="our-team__card-text"><h3 class="our-team__name">Михаил Ермаков</h3>
             <p lang="en" class="our-team__proffetions">UI Designer</p>
             <ul class="socials">
@@ -318,8 +350,8 @@
           </li>
         </ul>
       </div>
-    </section>
-    <section class="section clients">
+    </section> -->
+    <!-- <section class="section clients">
       <div class="conteiner clients-conteiner">
         <h2 class="clients__title">Постоянные клиенты</h2>
         <ul class="clients__list">
@@ -367,53 +399,55 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
   </main>
-  <footer>
+  <!-- <footer>
     <div class="conteiner footer-conteiner">
-      <div class="footer-nav">
-        <a class="logo" href="">Web<span class="logo--light">Studio</span></a>
-        <address class="address">
-          <ul class="address__list">
-            <li><a class="address__link" href="https://goo.gl/maps/uUomb9TQHdd4bi6o7">г. Киев, пр-т Леси Украинки, 26</a>
+      <div class="footer-tabl">
+        <div class="footer-nav">
+          <a class="logo" href="">Web<span class="logo--light">Studio</span></a>
+          <address class="address">
+            <ul class="address__list">
+              <li><a class="address__link" href="https://goo.gl/maps/uUomb9TQHdd4bi6o7">г. Киев, пр-т Леси Украинки, 26</a>
+              </li>
+              <li><a class="address__contact-link" href="mailto:info@example.com">info@example.com</a></li>
+              <li><a class="address__contact-link" href="+380991111111">+38 099 111 11 11</a></li>
+            </ul>
+          </address>
+        </div>
+        <div class="socials-wrap">
+          <p class="footer-title">присоединяйтесь</p>
+          <ul class="socials socials--dark">
+            <li class="socials__item">
+              <a href="" class="socials__link socials__link--dark">
+                <svg class="socials__icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li><a class="address__contact-link" href="mailto:info@example.com">info@example.com</a></li>
-            <li><a class="address__contact-link" href="+380991111111">+38 099 111 11 11</a></li>
+            <li class="socials__item">
+              <a href="" class="socials__link socials__link--dark">
+                <svg class="socials__icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="" class="socials__link socials__link--dark">
+                <svg class="socials__icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="" class="socials__link socials__link--dark">
+                <svg class="socials__icon">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
-        </address>
-      </div>
-      <div class="socials-wrap">
-        <p class="footer-title">присоединяйтесь</p>
-        <ul class="socials socials--dark">
-          <li class="socials__item">
-            <a href="" class="socials__link socials__link--dark">
-              <svg class="socials__icon">
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a href="" class="socials__link socials__link--dark">
-              <svg class="socials__icon">
-                <use href="./images/icons.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a href="" class="socials__link socials__link--dark">
-              <svg class="socials__icon">
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a href="" class="socials__link socials__link--dark">
-              <svg class="socials__icon">
-                <use href="./images/icons.svg#icon-linkedin-1"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        </div>
       </div>
       <form class="footer-form">
         <div class="footer-form__field">
@@ -428,8 +462,8 @@
         </button>
       </form>
     </div>
-  </footer>
-  <div class="backdrop is-hidden" data-modal>
+  </footer> -->
+  <!-- <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button class="button modal-close" data-modal-close>
         <svg class="modal-close__icon" width= "18" height= "18">
@@ -486,8 +520,9 @@
         <button type="submit" class="modal-btn btn">Отправить</button>
       </form>
     </div>
-  </div>
-  <script src="./js/modal.js"></script>
+  </div> -->
+  <!-- <script src="./js/modal.js"></script> -->
+  <script src="./js/menu.js"></script>
 </body>
 
 </html>

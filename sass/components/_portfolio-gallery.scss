@@ -1,16 +1,23 @@
 .portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
   margin-bottom: -30px;
+  margin-right: -30px;
   width: inherit;
+  @include tabl {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .portfolio-card {
-  width: calc(100% / 3 - 30px);
-  margin-right: 30px;
+  max-width: 100%;
   margin-bottom: 30px;
-  &:nth-child(3n) {
-    margin-right: 0;
+  @include tabl {
+    margin-right: 30px;
+    width: calc(100% / 2 - 30px);
+    @include desk {
+      width: calc(100% / 3 - 30px);
+    }
   }
+  // align-items: center;
 }
 .portfolio-card__overlay-text {
   .portfolio-card:focus &,
@@ -19,6 +26,9 @@
   }
 }
 .portfolio-card__img {
+  max-width: 370px;
+  height: auto;
+  margin: 0 auto;
   display: block;
   &:hover,
   &:focus {
