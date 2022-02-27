@@ -1029,7 +1029,8 @@ footer {
 }
 
 .portfolio-card {
-  max-width: 100%;
+  align-items: center;
+  width: 100%;
   margin-bottom: 30px;
 }
 
@@ -1052,7 +1053,7 @@ footer {
 }
 
 .portfolio-card__img {
-  max-width: 370px;
+  width: 100%;
   height: auto;
   margin: 0 auto;
   display: block;
@@ -1129,10 +1130,22 @@ footer {
   transform: translate(-50%, -50%) scale(1);
   padding: 40px;
   opacity: 1;
-  width: 528px;
+  width: 100%;
   background-color: var(--modal-bg-color);
   border-radius: 4px;
   text-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .modal-close {
@@ -1159,28 +1172,49 @@ footer {
   flex-direction: column;
   width: 100%;
   align-items: center;
-  transition: background-color 2000ms var(--cubic);
-  transition: border-color 2000ms var(--cubic);
+  transition: background-color var(--anim-duration) var(--cubic);
+  transition: border-color var(--anim-duration) var(--cubic);
 }
 
 .modal-form__title {
   margin-bottom: 12px;
+  text-align: center;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   color: var(--basic-title-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+  }
+}
+
+.modal-form__list {
+  width: inherit;
 }
 
 .modal-form__item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
-  width: 448px;
+  margin: 0 auto 10px auto;
+  max-width: 370px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form__item {
+    width: 448px;
+  }
 }
 
 .modal-form__label {
   margin-bottom: 4px;
+  width: inherit;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -1221,7 +1255,7 @@ footer {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
-  width: 100%;
+  max-width: 370px;
   height: 138px;
   resize: none;
 }
