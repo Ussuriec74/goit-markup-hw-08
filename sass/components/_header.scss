@@ -65,9 +65,9 @@ header {
     height: 4px;
     border-radius: 2px;
     background-color: var(--accent-color);
-    @include desk {
-      bottom: -34px;
-    }
+    //   @include desk {
+    //     bottom: -34px;
+    //   }
   }
 }
 
