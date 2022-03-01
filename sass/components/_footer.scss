@@ -31,8 +31,11 @@ footer {
 
 .address {
   margin-top: 20px;
-  margin-bottom: 60px;
   font-style: normal;
+  margin-bottom: 60px;
+  @include desk {
+    margin-bottom: 0;
+  }
   &__contact-link {
     display: inline-block;
     margin-top: 8px;
@@ -61,8 +64,6 @@ footer {
   @include desk {
     display: flex;
     width: 570px;
-    height: 86px;
-    margin-top: 72px;
   }
 }
 .footer-form__field {

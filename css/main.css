@@ -735,12 +735,6 @@ header {
   fill: currentColor;
 }
 
-.socials--dark {
-  margin: 0 auto;
-  width: 206px;
-  height: 80px;
-}
-
 .socials__link--dark {
   color: var(--footer-address-color);
   background-color: rgba(255, 255, 255, 0.1);
@@ -862,8 +856,14 @@ footer {
 
 .address {
   margin-top: 20px;
-  margin-bottom: 60px;
   font-style: normal;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .address {
+    margin-bottom: 0;
+  }
 }
 
 .address__contact-link {
@@ -905,8 +905,6 @@ footer {
   .footer-form {
     display: flex;
     width: 570px;
-    height: 86px;
-    margin-top: 72px;
   }
 }
 
