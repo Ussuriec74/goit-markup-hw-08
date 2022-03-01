@@ -112,14 +112,14 @@ header {
   border-bottom: 1px solid #ececec;
 }
 
-@media screen and (min-widht: 768px) {
+@media screen and (min-width: 768px) {
   header {
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
 }
 
-@media screen and (min-widht: 1200px) {
+@media screen and (min-width: 1200px) {
   header {
     padding-top: 24px;
     padding-bottom: 25px;
@@ -146,7 +146,6 @@ header {
   display: flex;
   align-items: center;
   margin-left: 88px;
-  margin-right: 84px;
 }
 
 .header-nav__list :not(:last-child) {
@@ -165,7 +164,6 @@ header {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  vertical-align: Top;
   color: var(--header-link-color);
   transition: color var(--anim-duration) var(--cubic);
 }
@@ -190,10 +188,14 @@ header {
   background-color: var(--accent-color);
 }
 
+.header-contact__list {
+  display: flex;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .header-contact__list :not(:last-child) {
-    margin-bottom: 10px;
-    margin-left: 18px;
+  .header-contact__list {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -207,8 +209,14 @@ header {
 }
 
 .header-contact__item {
-  padding-right: auto;
   color: var(--header-contact-color);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-contact__item + .header-contact__item {
+    margin-top: 10px;
+    margin-right: 18px;
+  }
 }
 
 .header-contact__item:focus, .header-contact__item:hover {
@@ -243,7 +251,7 @@ header {
 }
 
 .header-contact__icon {
-  margin-right: 10px;
+  margin-right: 8px;
   fill: currentColor;
 }
 
