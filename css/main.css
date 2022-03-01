@@ -1190,14 +1190,14 @@ footer {
 }
 
 .modal-form__list {
-  width: inherit;
+  max-width: inherit;
 }
 
 .modal-form__item {
   display: flex;
   flex-direction: column;
-  margin: 0 auto 10px auto;
-  max-width: 370px;
+  margin-bottom: 10px;
+  width: 370px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1252,6 +1252,12 @@ footer {
   max-width: 370px;
   height: 138px;
   resize: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form__coment {
+    max-width: 448px;
+  }
 }
 
 .modal-form__text {
