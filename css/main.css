@@ -75,8 +75,10 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .conteiner {
@@ -515,6 +517,7 @@ header {
 
 .features__list {
   margin-bottom: -30px;
+  text-align: left;
 }
 
 @media screen and (min-width: 768px) {
