@@ -842,7 +842,7 @@ footer {
   .footer-tabl {
     display: flex;
     justify-content: space-between;
-    margin-right: 89px;
+    margin-right: auto;
     margin-left: 76px;
   }
 }
@@ -904,6 +904,7 @@ footer {
 @media screen and (min-width: 1200px) {
   .footer-form {
     display: flex;
+    align-items: flex-end;
     width: 570px;
   }
 }
@@ -948,17 +949,12 @@ footer {
 @media screen and (min-width: 1200px) {
   .footer-form__input {
     width: 358px;
+    margin-bottom: 0;
   }
 }
 
 .footer-btn {
   margin: 0 auto;
-}
-
-@media screen and (min-width: 1200px) {
-  .footer-btn {
-    margin-top: 48px;
-  }
 }
 
 .footer-btn__title {
