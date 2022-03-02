@@ -17,13 +17,16 @@
   color: var(--basic-title-color);
 }
 .modal-form__list {
-  max-width: inherit;
+  max-width: 100%;
 }
 .modal-form__item {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
-  width: 370px;
+  max-width: 370px;
+  @include tabl {
+    width: 370px;
+  }
   @include desk {
     width: 448px;
   }
@@ -105,7 +108,10 @@
   display: flex;
   align-items: center;
   margin-bottom: 30px;
-  @include font(null, 14px, 1.71, 0.03em);
+  @include font(null, 12px, 1.17, 0.03em);
+  @include desk {
+    @include font(null, 14px, 1.71, 0.03em);
+  }
   color: var(--basic-text-color);
   .modal-checkbox__check:checked + & {
     fill: var(--primary--link-color);

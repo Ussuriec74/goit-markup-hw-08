@@ -1,6 +1,8 @@
 .backdrop {
   position: fixed;
   top: 0;
+  z-index: 10;
+  overflow-y: scroll;
   transition: transform var(--anim-duration) var(--cubic),
     opacity var(--anim-duration) var(--cubic),
     visibility var(--anim-duration) var(--cubic);
@@ -19,7 +21,7 @@
   transform: translate(-50%, -50%) scale(1);
   padding: 40px;
   opacity: 1;
-  width: 100%;
+  max-width: 100%;
 
   background-color: var(--modal-bg-color);
   border-radius: 4px;
