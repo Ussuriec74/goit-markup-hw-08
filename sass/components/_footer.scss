@@ -24,7 +24,6 @@ footer {
     margin-left: 76px;
   }
   @include desk {
-    margin-right: 93px;
     margin-left: 0;
   }
 }
@@ -32,7 +31,8 @@ footer {
 .address {
   margin-top: 20px;
   font-style: normal;
-  @include desk {
+  margin-bottom: 60px;
+  @include tabl {
     margin-bottom: 0;
   }
   &__contact-link {
@@ -49,15 +49,20 @@ footer {
     color: var(--footer-address-color);
   }
 }
-
+.socials-wrap {
+  @include tabl {
+    margin-right: 89px;
+  }
+  @include desk {
+    padding-top: 12px;
+    margin-right: 0;
+  }
+}
 .footer-title {
   margin-bottom: 20px;
   @include font(700, 14px, 1.14, 00.03em);
   text-transform: uppercase;
   color: var(--footer-address-color);
-  @include desk {
-    margin-top: 12px;
-  }
 }
 .footer-form {
   @include desk {
@@ -67,10 +72,10 @@ footer {
   }
 }
 .footer-form__field {
-  margin-right: 12px;
   margin-top: 60px;
   @include desk {
     margin-top: 0;
+    margin-right: 12px;
   }
 }
 .footer-form__title {

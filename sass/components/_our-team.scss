@@ -16,6 +16,9 @@
     flex-wrap: wrap;
     margin-right: -30px;
   }
+  @include desk {
+    margin-bottom: 0;
+  }
 }
 .our-team__item {
   width: 100%;
@@ -27,6 +30,7 @@
     margin-right: 30px;
   }
   @include desk {
+    margin-bottom: 0;
     width: calc(100% / 4 - 30px);
   }
 }
