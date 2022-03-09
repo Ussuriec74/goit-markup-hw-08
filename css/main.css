@@ -69,6 +69,10 @@ body {
   background-color: var(--body-backgr-color);
 }
 
+body.is-open {
+  overflow-y: hidden;
+}
+
 .section {
   padding-top: 60px;
   padding-bottom: 60px;

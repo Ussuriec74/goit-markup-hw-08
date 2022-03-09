@@ -4,4 +4,8 @@ body {
   letter-spacing: 00.03em;
   color: var(--basic-text-color);
   background-color: var(--body-backgr-color);
+
+  &.is-open {
+    overflow-y: hidden;
+  }
 }
